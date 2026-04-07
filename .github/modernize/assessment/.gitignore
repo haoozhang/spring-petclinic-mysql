@@ -1,0 +1,9 @@
+*
+!engines/
+!engines/appcat/
+!engines/appcat/result/
+!engines/appcat/result/report.json
+!js-package-upgrade-plan.md
+!architecture-diagram.md
+!dependency-map.md
+!project-facts.md
