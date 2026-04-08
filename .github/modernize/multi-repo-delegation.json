@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-04-08T05:58:14.6847254Z",
+  "status": "in_progress",
+  "repos": [
+    {
+      "name": "spring-petclinic-mysql",
+      "url": "https://github.com/haoozhang/spring-petclinic-mysql",
+      "clonePath": "C:\\Users\\haozhan\\Downloads\\repos\\spring-petclinic-mysql",
+      "statusFileDirectory": "C:\\Users\\haozhan\\Downloads\\repos\\spring-petclinic-mysql\\.github\\modernize\\delegation",
+      "sessionId": "e424b341-73ff-4d25-866b-5b5d2d3eea72",
+      "detectedLanguage": "Java",
+      "relativePath": ""
+    }
+  ]
+}
