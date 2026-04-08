@@ -1,0 +1,7 @@
+*
+!reports/
+!report.json
+!js-package-upgrade-plan.md
+!architecture-diagram.md
+!dependency-map.md
+!project-facts.md
