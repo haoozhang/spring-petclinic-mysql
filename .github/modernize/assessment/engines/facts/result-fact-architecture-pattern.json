@@ -1,0 +1,33 @@
+{
+  "input_name": "Architecture Pattern",
+  "analysis_method": "Hybrid",
+  "status": "success",
+  "result": {
+    "finding": "Layered Monolith with MVC pattern. Single deployable Spring Boot application organized by domain packages (owner, vet, system) each containing controllers, repositories, and entities. No microservices, service discovery, API gateway, or message broker found.",
+    "confidence": "high",
+    "evidence": [
+      "Single pom.xml with one Spring Boot application entry point (PetClinicApplication.java)",
+      "Single @SpringBootApplication class - one deployable unit",
+      "Package structure organized by domain: petclinic/owner, petclinic/vet, petclinic/system, petclinic/model",
+      "Each domain package contains Controllers (@GetMapping/@PostMapping), Repositories (Spring Data JPA), and Entities",
+      "No service discovery dependencies (no Eureka, Consul, Kubernetes client)",
+      "No API gateway (no Zuul, Spring Cloud Gateway)",
+      "No message broker (no Kafka, RabbitMQ, ActiveMQ dependencies)",
+      "Thymeleaf templates for server-side rendered views (MVC View layer)",
+      "Spring Data JPA Repositories as Data Access layer"
+    ],
+    "values": ["Layered Monolith", "MVC", "Domain-Driven Package Structure"],
+    "architecture_details": {
+      "pattern": "Layered Monolith",
+      "sub_pattern": "MVC",
+      "service_count": 1,
+      "has_service_discovery": false,
+      "has_api_gateway": false,
+      "has_message_broker": false,
+      "layers": ["Presentation (Spring MVC Controllers + Thymeleaf)", "Data Access (Spring Data JPA Repositories)", "Domain (Entities: Owner, Pet, Visit, Vet, Specialty)"],
+      "domain_packages": ["owner", "vet", "system", "model"]
+    }
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T05:59:35Z"
+}

@@ -1,0 +1,30 @@
+{
+  "input_name": "Data Classification",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "PII (Personal Identifiable Information) data is handled. The database schema stores owner personal details including name, address, city, and telephone. Vet personal data (names) is also stored. No payment, health, or highly confidential data is present.",
+    "confidence": "high",
+    "evidence": [
+      "db/mysql/schema.sql: owners table contains first_name, last_name, address, city, telephone (PII fields)",
+      "db/mysql/schema.sql: vets table contains first_name, last_name (staff PII)",
+      "db/mysql/schema.sql: pets table contains name, birth_date (pet data, low sensitivity)",
+      "db/mysql/schema.sql: visits table contains visit_date, description (veterinary visit notes)",
+      "No credit card, SSN, or payment data fields found (no PCI-DSS relevance)",
+      "No medical/health data beyond veterinary visit descriptions (no HIPAA relevance)",
+      "No password or authentication credential fields in schema",
+      "Script detected no data classification markers in code annotations"
+    ],
+    "values": [
+      "PII: Owner personal data (first_name, last_name, address, city, telephone)",
+      "PII: Veterinarian personal data (first_name, last_name)",
+      "Internal: Pet data (name, birth_date, type)",
+      "Internal: Veterinary visit records (date, description)",
+      "No PHI, PCI, or Restricted data found",
+      "Overall classification: Internal / PII"
+    ],
+    "script_output": { "classifications": ["PII"] }
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T06:00:20Z"
+}

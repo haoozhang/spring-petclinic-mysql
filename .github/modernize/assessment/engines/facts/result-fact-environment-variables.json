@@ -1,0 +1,27 @@
+{
+  "input_name": "Environment Variables",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "5 environment variables used for MySQL database configuration, defined via Spring Boot property placeholders in application-mysql.properties. No Dockerfile ENV, docker-compose environment section, Kubernetes ConfigMap/Secret references, or .env files found.",
+    "confidence": "high",
+    "evidence": [
+      "src/main/resources/application-mysql.properties uses ${MYSQL_HOST:localhost}, ${MYSQL_PORT:3306}, ${MYSQL_DATABASE:petclinic}, ${MYSQL_USERNAME:petclinic}, ${MYSQL_PASSWORD:}",
+      "No Dockerfile ENV instructions found",
+      "No docker-compose environment section found",
+      "No .env or .env.example files found",
+      "No Kubernetes ConfigMap or Secret references found"
+    ],
+    "values": [
+      "MYSQL_HOST (default: localhost) - Database host",
+      "MYSQL_PORT (default: 3306) - Database port",
+      "MYSQL_DATABASE (default: petclinic) - Database name",
+      "MYSQL_USERNAME (default: petclinic) - Database username",
+      "MYSQL_PASSWORD (default: empty) - Database password (sensitive)",
+      "Category: Database (5 variables)",
+      "Total: 5 environment variables"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T05:59:22Z"
+}

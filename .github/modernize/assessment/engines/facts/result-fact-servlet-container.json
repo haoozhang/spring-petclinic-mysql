@@ -1,0 +1,30 @@
+{
+  "input_name": "Servlet Container",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Spring Boot 3.3.2 application with embedded Apache Tomcat (Servlet 6.0 / Jakarta EE 10). The application uses Spring MVC over the embedded Tomcat servlet container provided by spring-boot-starter-web. No external deployment descriptor (web.xml), no container-specific configurations, and no custom Servlet/Filter implementations exist.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml: spring-boot-starter-web:3.3.2 includes tomcat-embed-core (Apache Tomcat 10.1.x)",
+      "Spring Boot 3.x uses Jakarta EE 10 APIs (jakarta.servlet-api 6.0)",
+      "No WEB-INF/web.xml deployment descriptor found",
+      "No container-specific configs (weblogic.xml, jboss-web.xml, etc.) found",
+      "No custom HttpServlet, @WebServlet, or @WebFilter implementations found",
+      "Spring MVC controllers use @Controller/@GetMapping annotations (annotation-based dispatch)",
+      "pom.xml packaging defaults to JAR (embedded Tomcat, not WAR for external deployment)",
+      "PetClinicRuntimeHints.java registers AOT runtime hints for Spring 6 native support"
+    ],
+    "values": [
+      "Servlet API: 6.0 (Jakarta EE 10)",
+      "Container: Embedded Apache Tomcat 10.1.x",
+      "Deployment model: Embedded (JAR packaging)",
+      "Jakarta EE version: 10",
+      "Spring MVC (DispatcherServlet) as front controller",
+      "No external container required",
+      "No custom Servlet/Filter implementations"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T06:01:10Z"
+}

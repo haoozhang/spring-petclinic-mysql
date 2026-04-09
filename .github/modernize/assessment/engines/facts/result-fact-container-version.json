@@ -1,0 +1,18 @@
+{
+  "input_name": "Container Version",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No container version information found. No docker-compose files, CI/CD workflows, or container documentation exists in the project.",
+    "confidence": "high",
+    "evidence": [
+      "No docker-compose.yml found",
+      "No .github/workflows/ directory found",
+      "No .gitlab-ci.yml found",
+      "No container version requirements in documentation"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T05:59:05Z"
+}

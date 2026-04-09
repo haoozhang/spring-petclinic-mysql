@@ -1,0 +1,26 @@
+{
+  "input_name": "Version Information",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Application version is 3.3.0-SNAPSHOT as declared in pom.xml. This is a development/snapshot version indicating active development. The parent Spring Boot BOM version is 3.3.2. No git tags found.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml <version>: 3.3.0-SNAPSHOT",
+      "pom.xml parent <version> (Spring Boot BOM): 3.3.2",
+      "Java version: 17 (from pom.xml java.version property)",
+      "No git tags found in repository",
+      "project.build.outputTimestamp: 2023-05-10T07:42:50Z (reproducible build timestamp)"
+    ],
+    "values": [
+      "Application version: 3.3.0-SNAPSHOT",
+      "Version type: SNAPSHOT (development)",
+      "Spring Boot version: 3.3.2",
+      "Java version: 17",
+      "GroupId: org.springframework.samples",
+      "ArtifactId: spring-petclinic-mysql"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T05:59:38Z"
+}
