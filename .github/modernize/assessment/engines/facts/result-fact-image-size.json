@@ -1,0 +1,19 @@
+{
+  "input_name": "Image Size",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No Dockerfile or Containerfile found in the repository. Container image size cannot be estimated as the application is not yet containerized.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile found in the repository",
+      "No Containerfile found in the repository",
+      "No container build configuration exists to estimate image layers or size"
+    ],
+    "values": [
+      "No container image configured"
+    ]
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T12:38:30Z"
+}

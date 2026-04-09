@@ -1,0 +1,20 @@
+{
+  "input_name": "Base Image",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No Dockerfile or Containerfile found in the repository. No base image is configured.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile found in the repository",
+      "No Containerfile found in the repository",
+      "No docker-compose.yml found in the repository",
+      "No Kubernetes manifests found"
+    ],
+    "values": [
+      "No base image configured"
+    ]
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T12:38:15Z"
+}
