@@ -1,0 +1,26 @@
+{
+  "input_name": "Application Type",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "Web Application with REST API. The project is a Spring Boot MVC web application that uses Thymeleaf for server-side HTML rendering and also exposes a REST endpoint (VetController returns JSON for /vets.json). It is not a pure REST API — HTML views are the primary interface.",
+    "confidence": "high",
+    "evidence": [
+      "Spring Boot web/REST annotations found (Spring MVC @Controller, @RequestMapping)",
+      "Thymeleaf templates found under src/main/resources/templates/ (owners, pets, vets, welcome views)",
+      "spring-boot-starter-thymeleaf dependency declared in pom.xml",
+      "VetController produces both HTML view and JSON (application/json) for /vets endpoint",
+      "spring-boot-starter-web dependency declared in pom.xml"
+    ],
+    "values": [
+      "Web Application (server-side rendered HTML with Thymeleaf)",
+      "REST API (JSON endpoint for /vets.json)",
+      "Framework: Spring Boot 3.3.2 + Spring MVC"
+    ],
+    "script_output": {
+      "application_type": "REST API"
+    }
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:21:10Z"
+}

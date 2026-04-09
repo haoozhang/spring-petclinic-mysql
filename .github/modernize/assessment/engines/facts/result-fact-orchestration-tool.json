@@ -1,0 +1,19 @@
+{
+  "input_name": "Orchestration Tool",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No container orchestration tool is configured. The repository has no docker-compose.yml, Kubernetes manifests, Docker Swarm configuration, or CI/CD pipeline referencing any orchestration tool.",
+    "confidence": "high",
+    "evidence": [
+      "No docker-compose*.yml files found",
+      "No k8s/ or manifests/ directory found",
+      "No Kubernetes resource files (kind: Deployment, kind: Service) found",
+      "No CI/CD workflow files found under .github/workflows/",
+      "No kubectl, helm, or docker stack commands found in any scripts"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T04:22:20Z"
+}

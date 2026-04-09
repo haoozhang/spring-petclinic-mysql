@@ -1,0 +1,33 @@
+{
+  "input_name": "Startup Instrumentation",
+  "analysis_method": "Hybrid",
+  "status": "success",
+  "result": {
+    "finding": "Default Spring Boot Logback logging with Spring Boot Actuator for metrics/health telemetry. No AOP, no third-party APM agent (Application Insights, New Relic, Datadog, etc.) configured.",
+    "confidence": "high",
+    "evidence": [
+      "application.properties configures logging.level.org.springframework=INFO (Spring Boot Logback)",
+      "No logback.xml, logback-spring.xml, log4j2.xml found — uses Spring Boot's default Logback configuration",
+      "No @Aspect, @Before, @After, or @Around annotations found in any Java source file (no AOP)",
+      "No applicationinsights, opentelemetry, newrelic, dd-trace, or elastic-apm dependencies in pom.xml",
+      "spring-boot-starter-actuator present: provides /actuator/health, /actuator/metrics, /actuator/info endpoints",
+      "PetClinicApplication.java is the sole entry point (@SpringBootApplication), no custom startup telemetry initialization"
+    ],
+    "values": [
+      "Logback (Spring Boot default, via spring-boot-starter-logging)",
+      "Spring Boot Actuator (health/metrics/info endpoints)",
+      "No AOP framework",
+      "No third-party APM/telemetry agent"
+    ],
+    "instrumentation_details": {
+      "logging_framework": "Logback (Spring Boot default)",
+      "logging_version": "bundled with Spring Boot 3.3.2",
+      "log_sinks": ["Console (default)"],
+      "telemetry_provider": "Spring Boot Actuator",
+      "aop_framework": null,
+      "startup_file": "PetClinicApplication.java"
+    }
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:24:10Z"
+}

@@ -1,0 +1,26 @@
+{
+  "input_name": "Profile Settings",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "The application uses a minimal 2-profile Spring setup: a default profile (application.properties, using H2 in-memory with MySQL as the target database config) and a 'mysql' profile (application-mysql.properties) that activates the real MySQL database connection via environment variables. No dev/test/staging/prod profiles exist.",
+    "confidence": "high",
+    "evidence": [
+      "application.properties: base configuration with database=mysql and H2/MySQL schema paths",
+      "application-mysql.properties: MySQL-specific datasource configuration with MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USERNAME, MYSQL_PASSWORD environment variables",
+      "No application-dev.properties, application-test.properties, application-staging.properties, or application-prod.properties found",
+      "No @Profile annotations in any source Java class",
+      "pom.xml has one Maven profile 'css' for CSS compilation only — not environment-related",
+      "No docker-compose or Kubernetes environment-specific configuration found"
+    ],
+    "values": [
+      "Profiles: default (application.properties), mysql (application-mysql.properties)",
+      "Config file type: .properties",
+      "Activation: Spring profile 'mysql' must be activated via --spring.profiles.active=mysql or SPRING_PROFILES_ACTIVE=mysql",
+      "Total profile-specific files: 1 (application-mysql.properties)",
+      "Profile-annotated components: 0"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:23:50Z"
+}

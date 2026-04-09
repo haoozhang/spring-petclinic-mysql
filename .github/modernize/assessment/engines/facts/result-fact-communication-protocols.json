@@ -1,0 +1,26 @@
+{
+  "input_name": "Communication Protocols",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "The application uses HTTP as its sole communication protocol. It exposes HTTP endpoints via Spring MVC (@GetMapping, @PostMapping) for server-side rendered HTML pages and one JSON REST endpoint (/vets). No gRPC, message queue, WebSocket, or TCP/UDP protocols are used.",
+    "confidence": "high",
+    "evidence": [
+      "@GetMapping and @PostMapping annotations found in OwnerController, PetController, VisitController, VetController, WelcomeController, CrashController",
+      "VetController exposes GET /vets.html and GET /vets (JSON response for application/json Accept header)",
+      "No *.proto files found (no gRPC)",
+      "No spring-boot-starter-amqp, spring-kafka, or messaging dependencies in pom.xml",
+      "No WebSocket, SignalR, or TCP socket usage found in source code",
+      "Spring Boot Actuator exposes management endpoints over HTTP (/actuator/*)"
+    ],
+    "values": [
+      "Protocol: HTTP/1.1",
+      "Style: Server-side rendered web (Thymeleaf) + limited REST (JSON)",
+      "HTTP GET endpoints: /owners, /owners/{id}, /owners/find, /owners/new, /owners/{id}/edit, /vets, /vets.html, /, /oups",
+      "HTTP POST endpoints: /owners/new, /owners/{id}/edit, /owners/{ownerId}/pets/new, /owners/{ownerId}/pets/{petId}/edit, /owners/{ownerId}/pets/{petId}/visits/new",
+      "Framework: Spring MVC 6.x (via Spring Boot 3.3.2)"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:21:50Z"
+}

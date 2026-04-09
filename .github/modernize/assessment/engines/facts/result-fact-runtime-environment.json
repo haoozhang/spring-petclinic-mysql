@@ -1,0 +1,19 @@
+{
+  "task_id": "014",
+  "input_name": "Runtime Environment",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "Java 17",
+    "confidence": "medium",
+    "evidence": ["Maven/Gradle build file found"],
+    "values": ["Java", "Version: 17"],
+    "script_output": {
+      "runtime": "Java",
+      "version": "17",
+      "variant": "standard"
+    }
+  },
+  "execution_time_seconds": 0,
+  "timestamp": "2026-04-09T04:39:26Z"
+}

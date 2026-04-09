@@ -1,0 +1,25 @@
+{
+  "input_name": "External Dependencies",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "The application has one external system dependency: MySQL database. The connection is configured via environment variables in application-mysql.properties (MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USERNAME, MYSQL_PASSWORD). Azure Database for MySQL is supported as a managed cloud alternative via the Spring Cloud Azure JDBC MySQL starter. No caching service (Redis), authentication service (LDAP/AD), object storage (S3/Blob), or message broker dependencies exist.",
+    "confidence": "high",
+    "evidence": [
+      "application-mysql.properties: spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:petclinic}",
+      "application-mysql.properties: spring.datasource.username=${MYSQL_USERNAME:petclinic}",
+      "application-mysql.properties: spring.datasource.password=${MYSQL_PASSWORD:}",
+      "pom.xml: com.mysql:mysql-connector-j (runtime scope)",
+      "pom.xml: com.azure.spring:spring-cloud-azure-starter-jdbc-mysql:5.16.0",
+      "No LDAP, Redis, S3, Kafka, RabbitMQ, or Elasticsearch configuration found"
+    ],
+    "values": [
+      "MySQL (relational database, external — default host: localhost:3306)",
+      "Azure Database for MySQL (managed cloud alternative)",
+      "Purpose: Primary application data store (owners, pets, visits, vets)",
+      "Count: 1 external system dependency"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:23:00Z"
+}

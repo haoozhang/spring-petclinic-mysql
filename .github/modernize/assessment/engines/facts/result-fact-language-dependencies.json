@@ -1,0 +1,24 @@
+{
+  "input_name": "Language Dependencies",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Java application with 15 non-test dependencies declared in pom.xml, managed by the Spring Boot 3.3.2 parent BOM. No Dockerfile with COPY/install commands exists, but the Maven pom.xml is the canonical dependency manifest.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml found at repository root — Maven dependency manifest",
+      "Spring Boot parent BOM 3.3.2 manages most versions",
+      "No Dockerfile — no COPY pom.xml or RUN mvn commands to analyze",
+      "15 non-test dependencies declared across web, database, caching, and observability categories"
+    ],
+    "values": [
+      "Dependency file: pom.xml (Maven)",
+      "Non-test dependencies: 15",
+      "Test-scoped dependencies: 6 (spring-boot-starter-test, spring-boot-testcontainers, spring-boot-docker-compose, spring-boot-devtools, testcontainers:junit-jupiter, testcontainers:mysql)",
+      "Key dependencies: spring-boot-starter-web, spring-boot-starter-data-jpa, spring-boot-starter-thymeleaf, spring-cloud-azure-starter-jdbc-mysql:5.16.0, mysql-connector-j, h2, caffeine, spring-boot-starter-actuator, spring-boot-starter-cache, spring-boot-starter-validation, jakarta.xml.bind-api, webjars-bootstrap:5.3.3, webjars-font-awesome:4.7.0, javax.cache:cache-api",
+      "Build tool: Maven (spring-boot-maven-plugin, jacoco-maven-plugin, maven-enforcer-plugin)"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:24:50Z"
+}

@@ -1,0 +1,26 @@
+{
+  "input_name": "Environment Variables",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "5 environment variables are referenced in application-mysql.properties for MySQL database connectivity configuration. No Dockerfile ENV instructions or docker-compose environment sections are present. No .env file found.",
+    "confidence": "high",
+    "evidence": [
+      "application-mysql.properties references MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USERNAME, MYSQL_PASSWORD with defaults",
+      "No Dockerfile ENV instructions (no Dockerfile present)",
+      "No docker-compose environment section (no docker-compose.yml present)",
+      "No .env or .env.example files found"
+    ],
+    "values": [
+      "MYSQL_HOST (default: localhost) — Database host",
+      "MYSQL_PORT (default: 3306) — Database port",
+      "MYSQL_DATABASE (default: petclinic) — Database name",
+      "MYSQL_USERNAME (default: petclinic) — Database username",
+      "MYSQL_PASSWORD (default: empty) — Database password (sensitive)",
+      "Category: Database (5 variables)",
+      "Total: 5 environment variables"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:21:30Z"
+}

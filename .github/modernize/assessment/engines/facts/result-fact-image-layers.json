@@ -1,0 +1,16 @@
+{
+  "input_name": "Image Layers",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No Dockerfile or Containerfile found in the repository. Image layer analysis cannot be performed.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile found in repository",
+      "No Containerfile found in repository"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T04:20:30Z"
+}

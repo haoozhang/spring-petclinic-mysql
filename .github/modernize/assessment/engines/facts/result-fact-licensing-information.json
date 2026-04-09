@@ -1,0 +1,26 @@
+{
+  "input_name": "Licensing Information",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "The application is licensed under the Apache License, Version 2.0 as declared in pom.xml. No LICENSE file is present in the repository root. Key dependencies are also Apache 2.0 (Spring Boot, Spring Framework, Spring Cloud Azure) or compatible permissive licenses.",
+    "confidence": "medium",
+    "evidence": [
+      "pom.xml <licenses><license><name>Apache License, Version 2.0</name><url>https://www.apache.org/licenses/LICENSE-2.0</url></license></licenses>",
+      "No LICENSE file found in repository root",
+      "Spring Boot 3.3.2 — Apache License 2.0",
+      "Spring Cloud Azure 5.16.0 — MIT License",
+      "MySQL Connector/J — GPL v2 with FOSS exception (or commercial license)",
+      "H2 Database — Eclipse Public License 2.0 / Mozilla Public License 2.0",
+      "Caffeine — Apache License 2.0"
+    ],
+    "values": [
+      "Primary license: Apache License, Version 2.0",
+      "License file: Not present (only declared in pom.xml)",
+      "Key dependency licenses: Apache 2.0 (Spring), GPL v2+FOSS (MySQL Connector/J), EPL 2.0 (H2), MIT (Spring Cloud Azure)",
+      "Note: MySQL Connector/J GPL requires review when distributing commercial applications"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:23:20Z"
+}

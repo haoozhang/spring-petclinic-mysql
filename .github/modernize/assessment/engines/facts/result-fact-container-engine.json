@@ -1,0 +1,19 @@
+{
+  "input_name": "Container Engine",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No container engine configuration found. The project has no Dockerfile, Containerfile, docker-compose.yml, or CI/CD pipeline files referencing any container engine.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile or Containerfile found in repository",
+      "No docker-compose*.yml files found",
+      "No .dockerignore file found",
+      "No CI/CD workflow files found under .github/workflows/",
+      "No shell scripts referencing docker, podman, or buildah in project root"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:20:00Z"
+}

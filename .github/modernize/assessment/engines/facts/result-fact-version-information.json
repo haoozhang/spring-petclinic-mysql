@@ -1,0 +1,23 @@
+{
+  "input_name": "Version Information",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Application version is 3.3.0-SNAPSHOT as declared in pom.xml. This is a development (SNAPSHOT) version. The Spring Boot parent BOM version is 3.3.2. No git release tags are present in the repository.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml <version>3.3.0-SNAPSHOT</version>",
+      "pom.xml parent Spring Boot version: 3.3.2",
+      "No info.app.version property found in application.properties",
+      "No git release tags found in repository"
+    ],
+    "values": [
+      "Application version: 3.3.0-SNAPSHOT",
+      "Version type: SNAPSHOT (development/pre-release)",
+      "Spring Boot BOM version: 3.3.2",
+      "Java version: 17 (from pom.xml java.version property)"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:22:10Z"
+}

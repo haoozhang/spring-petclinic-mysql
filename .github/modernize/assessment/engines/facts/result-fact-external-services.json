@@ -1,0 +1,29 @@
+{
+  "input_name": "External Services",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "The application depends on MySQL as its primary external database service. H2 in-memory database is used for development/testing (not an external service). Connection details are configured via environment variables MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE. Azure Database for MySQL is also supported via spring-cloud-azure-starter-jdbc-mysql dependency.",
+    "confidence": "high",
+    "evidence": [
+      "application-mysql.properties: spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:petclinic}",
+      "pom.xml: com.mysql:mysql-connector-j (runtime scope)",
+      "pom.xml: com.azure.spring:spring-cloud-azure-starter-jdbc-mysql:5.16.0",
+      "pom.xml: com.h2database:h2 (runtime scope, for dev/test only)",
+      "No docker-compose.yml defining external service containers",
+      "No Redis, RabbitMQ, Kafka, or Elasticsearch dependencies"
+    ],
+    "values": [
+      "MySQL (primary database, external service)",
+      "Azure Database for MySQL (cloud-managed variant via Azure JDBC starter)",
+      "H2 (embedded in-memory, dev/test only — not external)",
+      "Count: 1 external service (MySQL)"
+    ],
+    "script_output": {
+      "services": [],
+      "count": 0
+    }
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T04:22:00Z"
+}
