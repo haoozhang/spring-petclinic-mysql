@@ -1,0 +1,36 @@
+{
+  "input_name": "Startup Instrumentation",
+  "analysis_method": "Hybrid",
+  "status": "success",
+  "result": {
+    "finding": "Spring Boot default Logback logging via SLF4J. Spring Boot Actuator provides built-in metrics and health monitoring. No custom AOP aspects, external APM agents, or telemetry frameworks detected.",
+    "confidence": "high",
+    "evidence": [
+      "No logback.xml or logback-spring.xml found - uses Spring Boot default Logback auto-configuration",
+      "application.properties sets logging.level.org.springframework=INFO (standard Spring logging)",
+      "spring-boot-starter-actuator in pom.xml provides /actuator/metrics, /actuator/health, /actuator/info endpoints",
+      "management.endpoints.web.exposure.include=* in application.properties exposes all Actuator endpoints",
+      "No @Aspect, @Before, @After, or @Around annotations found in any Java source files",
+      "No AspectJ, OpenTelemetry, Application Insights, New Relic, Datadog, or Elastic APM dependencies in pom.xml",
+      "No Logger.getLogger or LoggerFactory.getLogger calls found in main application code",
+      "jacoco-maven-plugin configured for test code coverage (not runtime telemetry)"
+    ],
+    "values": [
+      "Logback (via Spring Boot auto-configuration, SLF4J API)",
+      "Spring Boot Actuator (metrics, health, info endpoints)",
+      "No APM/telemetry framework",
+      "No AOP framework",
+      "Log level: INFO for org.springframework"
+    ],
+    "instrumentation_details": {
+      "logging_framework": "Logback (Spring Boot default)",
+      "logging_version": "Managed by Spring Boot 3.3.2",
+      "log_sinks": ["Console (default)"],
+      "telemetry_provider": "Spring Boot Actuator",
+      "aop_framework": "None",
+      "startup_file": "PetClinicApplication.java"
+    }
+  },
+  "execution_time_seconds": 3,
+  "timestamp": "2026-04-09T06:00:50Z"
+}

@@ -1,0 +1,24 @@
+{
+  "input_name": "Application Port",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Application uses Spring Boot default port 8080 for HTTP. No explicit server.port configured in application.properties, meaning the Spring Boot default of 8080 applies. No Dockerfile EXPOSE or container port mappings exist.",
+    "confidence": "medium",
+    "evidence": [
+      "No server.port property found in application.properties or application-mysql.properties",
+      "Spring Boot default port is 8080 when not explicitly configured",
+      "No Dockerfile with EXPOSE instruction found",
+      "No docker-compose ports mapping found",
+      "No Kubernetes containerPort specification found",
+      "management.endpoints.web.exposure.include=* suggests actuator endpoints on same port"
+    ],
+    "values": [
+      "Port: 8080 (Spring Boot default, HTTP)",
+      "Protocol: HTTP",
+      "Actuator endpoints also on port 8080 under /actuator"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T05:59:18Z"
+}

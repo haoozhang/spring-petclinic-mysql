@@ -1,0 +1,17 @@
+{
+  "input_name": "Resource Limits",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No resource limits configured. No docker-compose deploy.resources section or Kubernetes resources limits/requests found, as no container orchestration files exist in the project.",
+    "confidence": "high",
+    "evidence": [
+      "No docker-compose.yml with deploy.resources section found",
+      "No Kubernetes manifests with resources.limits or resources.requests found",
+      "No Kubernetes ResourceQuota manifests found"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T05:59:48Z"
+}

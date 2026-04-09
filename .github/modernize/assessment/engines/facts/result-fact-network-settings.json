@@ -1,0 +1,18 @@
+{
+  "input_name": "Network Settings",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No container network settings configured. No docker-compose networks section, Kubernetes Service/NetworkPolicy manifests, or Dockerfile EXPOSE instructions found.",
+    "confidence": "high",
+    "evidence": [
+      "No docker-compose.yml with networks section found",
+      "No Kubernetes Service or NetworkPolicy manifests found",
+      "No Dockerfile with EXPOSE instruction found",
+      "Application communicates over standard HTTP on port 8080 (Spring Boot default)"
+    ],
+    "values": []
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T05:59:51Z"
+}

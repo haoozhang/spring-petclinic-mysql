@@ -1,0 +1,28 @@
+{
+  "input_name": "Communication Protocols",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "HTTP/REST is the sole communication protocol. The application exposes HTTP endpoints via Spring MVC (@GetMapping, @PostMapping) for both server-rendered HTML (Thymeleaf) and a JSON REST endpoint. No gRPC, message queue, WebSocket, or TCP communication found.",
+    "confidence": "high",
+    "evidence": [
+      "@GetMapping and @PostMapping annotations found in OwnerController, PetController, VisitController, VetController, WelcomeController, CrashController",
+      "VetController uses @ResponseBody to serve JSON at /vets endpoint",
+      "No .proto files found (no gRPC)",
+      "No RabbitMQ, Kafka, or JMS dependencies in pom.xml",
+      "No WebSocket or SignalR usage found",
+      "No TCP/UDP socket code found",
+      "spring-boot-starter-web provides embedded Tomcat HTTP server"
+    ],
+    "values": [
+      "Protocol: HTTP/REST",
+      "Framework: Spring MVC (Spring Boot 3.3.2)",
+      "Port: 8080 (default)",
+      "Endpoints: GET /, GET /owners, POST /owners/new, GET /owners/find, GET/POST /owners/{id}/edit, GET/POST /owners/{id}/pets/new, GET/POST /owners/{id}/pets/{id}/edit, GET/POST /owners/{id}/pets/{id}/visits/new, GET /vets.html, GET /vets (JSON), GET /oups",
+      "JSON REST: GET /vets returns application/json",
+      "HTML views: all other endpoints return Thymeleaf-rendered HTML"
+    ]
+  },
+  "execution_time_seconds": 3,
+  "timestamp": "2026-04-09T05:59:30Z"
+}

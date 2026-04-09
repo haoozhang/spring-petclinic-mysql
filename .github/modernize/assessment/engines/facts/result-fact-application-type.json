@@ -1,0 +1,20 @@
+{
+  "input_name": "Application Type",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "Web Application with REST API. The application uses Spring MVC with Thymeleaf for server-side rendered UI (owner, pet, visit management) and also exposes a REST API endpoint (vets list as JSON).",
+    "confidence": "high",
+    "evidence": [
+      "Spring Boot web/REST annotations found",
+      "spring-boot-starter-thymeleaf dependency indicates server-side rendered UI",
+      "spring-boot-starter-web dependency indicates HTTP web layer",
+      "OwnerController, PetController, VisitController serve HTML views",
+      "VetController serves both HTML view and JSON REST response"
+    ],
+    "values": ["Web Application", "REST API"],
+    "script_output": { "application_type": "REST API" }
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T05:59:15Z"
+}

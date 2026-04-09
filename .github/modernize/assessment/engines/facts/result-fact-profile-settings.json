@@ -1,0 +1,28 @@
+{
+  "input_name": "Profile Settings",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Application uses a minimal Spring profile setup with one environment-specific profile: 'mysql'. The default application.properties targets MySQL via database=mysql, while application-mysql.properties overrides datasource settings with environment variable-based connection strings. One Maven build profile 'css' handles Bootstrap CSS unpacking. No dev/test/staging/prod Spring profiles or @Profile-annotated beans exist.",
+    "confidence": "high",
+    "evidence": [
+      "src/main/resources/application.properties: sets database=mysql as default (no explicit spring.profiles.active)",
+      "src/main/resources/application-mysql.properties: MySQL-specific datasource configuration with env var placeholders",
+      "No application-dev.properties, application-test.properties, application-staging.properties, application-prod.properties found",
+      "No @Profile annotations found in any Java source files",
+      "pom.xml <profiles>: single 'css' Maven profile for Bootstrap WebJar CSS unpacking (build-time only)",
+      "No docker-compose or Kubernetes environment-specific configs found",
+      "Spring Boot test scope uses H2 in-memory DB via TestContainers"
+    ],
+    "values": [
+      "Spring profiles: mysql (1 profile)",
+      "Maven build profiles: css (1 build-time profile for CSS generation)",
+      "Config files: application.properties (default), application-mysql.properties (mysql profile)",
+      "Activation method: Spring profile active by default when using MySQL datasource URL",
+      "No @Profile-annotated components",
+      "Environment distinction handled via environment variables, not Spring profiles"
+    ]
+  },
+  "execution_time_seconds": 3,
+  "timestamp": "2026-04-09T06:00:35Z"
+}

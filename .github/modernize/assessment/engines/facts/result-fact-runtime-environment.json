@@ -1,0 +1,32 @@
+{
+  "task_id": "014",
+  "input_name": "Runtime Environment",
+  "analysis_method": "Code",
+  "status": "success",
+  "result": {
+    "finding": "Java 17 runtime with Spring Boot 3.3.2. The application runs on the JVM with embedded Apache Tomcat provided by spring-boot-starter-web. No Dockerfile base image to confirm container runtime variant.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml <java.version>: 17",
+      "pom.xml parent: spring-boot-starter-parent:3.3.2 (Spring Boot)",
+      "pom.xml dependency: spring-boot-starter-web (includes embedded Tomcat)",
+      "Maven build file (pom.xml) confirms Java-based project",
+      "No Dockerfile to confirm container base image",
+      "maven-enforcer-plugin requireJavaVersion enforces minimum Java 17"
+    ],
+    "values": [
+      "Runtime: Java 17 (JVM)",
+      "Framework: Spring Boot 3.3.2",
+      "Servlet container: Embedded Apache Tomcat (from spring-boot-starter-web)",
+      "Build tool: Apache Maven",
+      "Variant: standard JVM (no container base image)"
+    ],
+    "script_output": {
+      "runtime": "Java",
+      "version": "17",
+      "variant": "standard"
+    }
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-09T06:00:45Z"
+}

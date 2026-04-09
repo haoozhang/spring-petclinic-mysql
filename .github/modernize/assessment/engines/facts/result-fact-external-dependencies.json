@@ -1,0 +1,28 @@
+{
+  "input_name": "External Dependencies",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "One primary external dependency: MySQL database. The application also uses H2 in-memory database for development/test scenarios. Caffeine is used for in-process caching (not an external service). No external caches, auth services, storage systems, or message queues are required.",
+    "confidence": "high",
+    "evidence": [
+      "application-mysql.properties: spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:petclinic}",
+      "application-mysql.properties: spring.datasource.username=${MYSQL_USERNAME:petclinic}",
+      "pom.xml: com.mysql:mysql-connector-j (runtime)",
+      "pom.xml: com.azure.spring:spring-cloud-azure-starter-jdbc-mysql:5.16.0 (Azure-managed identity support for MySQL)",
+      "pom.xml: com.h2database:h2 (runtime, development/test fallback)",
+      "pom.xml: com.github.ben-manes.caffeine:caffeine (in-process cache, not external)",
+      "No LDAP, OAuth, S3, Azure Blob, or message queue configuration found",
+      "No README.md found with additional dependency information"
+    ],
+    "values": [
+      "MySQL (external database, production) - host/port configurable via env vars",
+      "H2 in-memory database (embedded, dev/test only) - not a true external dependency",
+      "Caffeine cache (embedded/in-process) - not external",
+      "Count: 1 true external system (MySQL)",
+      "Azure MySQL integration supported via spring-cloud-azure-starter-jdbc-mysql"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T06:00:00Z"
+}

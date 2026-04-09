@@ -1,0 +1,22 @@
+{
+  "input_name": "Application Name",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Application name is 'spring-petclinic-mysql' as defined in the Maven pom.xml artifactId. No spring.application.name property set in application.properties.",
+    "confidence": "high",
+    "evidence": [
+      "pom.xml <artifactId>: spring-petclinic-mysql",
+      "pom.xml <groupId>: org.springframework.samples",
+      "pom.xml <version>: 3.3.0-SNAPSHOT",
+      "No spring.application.name property in application.properties"
+    ],
+    "values": [
+      "spring-petclinic-mysql",
+      "org.springframework.samples:spring-petclinic-mysql",
+      "Version: 3.3.0-SNAPSHOT"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-09T05:59:10Z"
+}
