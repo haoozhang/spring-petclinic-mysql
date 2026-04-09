@@ -2,20 +2,20 @@
   "version": "1.0.0",
   "producer": "Java AppCAT CLI",
   "metadata": {
-    "analysisStartTime": "2026-04-09T05:58:26.033352546Z",
-    "analysisEndTime": "2026-04-09T05:59:17.690920709Z",
+    "analysisStartTime": "2026-04-09T08:03:36.095728856Z",
+    "analysisEndTime": "2026-04-09T08:05:25.906410039Z",
     "status": "Complete",
     "privacyMode": "Protected",
     "privacyModeHelpUrl": "https://aka.ms/appcat-privacy-mode",
     "targetIds": [
-      "azure-aks",
       "azure-appservice",
-      "azure-container-apps"
+      "azure-container-apps",
+      "azure-aks"
     ],
     "targetDisplayNames": [
-      "Azure Kubernetes Service",
       "Azure App Service",
-      "Azure Container Apps"
+      "Azure Container Apps",
+      "Azure Kubernetes Service"
     ],
     "capabilities": [],
     "os": []
@@ -63,59 +63,7 @@
       "incidents": [
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "9cf421dd-1d32-4c89-bb67-e623abbbe2f2",
-          "location": "pom.xml",
-          "locationKind": "File",
-          "line": 112,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 8,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=azure/springboot"
-          ]
-        },
-        {
-          "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "18423331-3419-4a66-952f-bfba3acd1466",
-          "location": "pom.xml",
-          "locationKind": "File",
-          "line": 117,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 8,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=azure/springboot"
-          ]
-        },
-        {
-          "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "f8b70e79-78c2-42d9-950b-99a0b8a23ae8",
+          "incidentId": "550eee99-93ab-41f4-918d-b56c1f55ca9e",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 55,
@@ -141,7 +89,33 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "8e46016b-e05c-4784-b985-848ed1f796e6",
+          "incidentId": "c5466df3-9bcf-49fe-8d6f-1a4a93e5dd3b",
+          "location": "pom.xml",
+          "locationKind": "File",
+          "line": 51,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 8,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
+          "incidentId": "8e381954-8747-4176-a0bc-1c88829c02da",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 43,
@@ -167,7 +141,7 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "8756ff82-d81c-480d-98b3-9e49fdadcf9f",
+          "incidentId": "b072959a-0fd9-4376-ac07-c0f15447078a",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 72,
@@ -193,10 +167,10 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "20627413-0b20-4b3d-9cfd-080bf5266f0c",
+          "incidentId": "dce5a16a-c77b-473c-be83-6866da9c59d8",
           "location": "pom.xml",
           "locationKind": "File",
-          "line": 51,
+          "line": 112,
           "column": 0,
           "targets": {
             "azure-aks": {
@@ -219,7 +193,7 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "b19a2edb-3d9c-410f-b27b-77354266916d",
+          "incidentId": "acdeab92-f404-4ea5-92f6-d5b2bef7e606",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 63,
@@ -245,7 +219,33 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "a88989d1-4e9e-4e23-999f-eeb9ae6191cb",
+          "incidentId": "7e3612fe-8506-45ae-8116-916753261cdc",
+          "location": "pom.xml",
+          "locationKind": "File",
+          "line": 47,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 8,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
+          "incidentId": "37e36fef-4bc6-40ed-9dce-3891deed05ce",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 122,
@@ -271,10 +271,10 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "4e73040d-89c5-4e40-8040-78899d3d76a4",
+          "incidentId": "1ec3a34b-75d7-4e51-a6c3-57fda7f65a58",
           "location": "pom.xml",
           "locationKind": "File",
-          "line": 47,
+          "line": 117,
           "column": 0,
           "targets": {
             "azure-aks": {
@@ -297,7 +297,7 @@
         },
         {
           "ruleId": "spring-boot-to-azure-spring-boot-version-01000",
-          "incidentId": "e9b95d5f-2106-4fcf-bda3-658a2789f7ad",
+          "incidentId": "87b5ae6c-374f-44d8-a7e1-f057c3ace2a9",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 59,
@@ -322,86 +322,8 @@
           ]
         },
         {
-          "ruleId": "azure-password-01000",
-          "incidentId": "2b3652d9-3214-4b12-9a37-1b5cd15ac0a8",
-          "location": "src/main/resources/application-mysql.properties",
-          "locationKind": "File",
-          "line": 5,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "potential"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "potential"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "potential"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=azure/springboot"
-          ]
-        },
-        {
           "ruleId": "spring-framework-version-01000",
-          "incidentId": "a2c308fa-9f4b-43ef-9c25-fba8f096b907",
-          "location": "pom.xml",
-          "locationKind": "File",
-          "line": 47,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 8,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=azure/springboot"
-          ]
-        },
-        {
-          "ruleId": "spring-framework-version-01000",
-          "incidentId": "7242ce6d-2bae-4d02-bb0b-ce0a3d3b15d7",
-          "location": "pom.xml",
-          "locationKind": "File",
-          "line": 55,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 8,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 8,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=azure/springboot"
-          ]
-        },
-        {
-          "ruleId": "spring-framework-version-01000",
-          "incidentId": "09fc2796-b22b-4104-815e-e26706258097",
+          "incidentId": "d66bac30-2f47-41a3-bbc8-520c5db11b78",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 51,
@@ -427,7 +349,7 @@
         },
         {
           "ruleId": "spring-framework-version-01000",
-          "incidentId": "f37ba352-d2b9-4bdd-94e3-9ff67abe0c36",
+          "incidentId": "c5070ca3-b51f-4a13-bf9b-a40393a9c524",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 72,
@@ -452,8 +374,86 @@
           ]
         },
         {
+          "ruleId": "spring-framework-version-01000",
+          "incidentId": "cae95dba-a4c2-4b47-ac6e-e7270188c474",
+          "location": "pom.xml",
+          "locationKind": "File",
+          "line": 55,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 8,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "spring-framework-version-01000",
+          "incidentId": "30c8f8cf-9fd4-4609-9eac-dad186add93f",
+          "location": "pom.xml",
+          "locationKind": "File",
+          "line": 47,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 8,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 8,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "azure-password-01000",
+          "incidentId": "d3ba87e2-5a36-4633-9810-916770df214c",
+          "location": "src/main/resources/application-mysql.properties",
+          "locationKind": "File",
+          "line": 5,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "e0409ae2-484f-4dd2-a3be-d999f9ad5397",
+          "incidentId": "8061f283-eb7c-4cd8-8e47-5f7459afe846",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 47,
@@ -479,7 +479,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "a4bd9dce-2bc9-4977-9e2b-2c5e4df677df",
+          "incidentId": "aa2f8e48-10d8-46b3-b6cb-9c937c477156",
           "location": "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
           "locationKind": "File",
           "line": 20,
@@ -505,7 +505,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "c14bac15-3f86-4243-82a6-b41806c8c705",
+          "incidentId": "ad24ac27-2641-45d6-ac1f-acd0ae87fb29",
           "location": "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
           "locationKind": "File",
           "line": 18,
@@ -531,7 +531,7 @@
         },
         {
           "ruleId": "localhost-00004",
-          "incidentId": "85c95878-e45c-401b-83eb-3b63cccb1dfb",
+          "incidentId": "f88facb4-c66f-4a59-9556-321d03f533ff",
           "location": "src/main/resources/application-mysql.properties",
           "locationKind": "File",
           "line": 3,
@@ -557,7 +557,7 @@
         },
         {
           "ruleId": "dockerfile-00000",
-          "incidentId": "086fe371-51de-4019-b936-04b56922c57c",
+          "incidentId": "74c9e8c4-ad78-4aac-b636-ca8c67949f82",
           "location": "",
           "locationKind": "",
           "targets": {
@@ -745,5 +745,49 @@
         "os=linux"
       ]
     }
-  }
+  },
+  "security": [
+    {
+      "id": "CVE-2026-22733",
+      "title": "Spring Boot has an Authentication Bypass under Actuator CloudFoundry endpoints",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2026-22733](https://github.com/advisories/GHSA-mgvc-8q2h-5pgc): Spring Boot has an Authentication Bypass under Actuator CloudFoundry endpoints\n\nSeverity: MANDATORY (high, CVSS 8.2)\n\nSpring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under the path used by the CloudFoundry Actuator endpoints. This issue affects Spring Boot 3.0.0 through 3.3.13.\n\nAffected dependencies:\n  - org.springframework.boot:spring-boot-starter-actuator:3.3.2 (declared at pom.xml:43)\n\nVulnerable range: >= 3.0.0, <= 3.3.13\n\nRecommended fix:\n  - No patch available for the 3.3.x branch. Consider upgrading to Spring Boot 3.4.x or 3.5.12+, or applying mitigations described in https://spring.io/security/cve-2026-22733",
+      "evidence": {
+        "files": [
+          "pom.xml:43"
+        ],
+        "explanation": "[CVE-2026-22733](https://github.com/advisories/GHSA-mgvc-8q2h-5pgc): Spring Boot has an Authentication Bypass under Actuator CloudFoundry endpoints\n\nSeverity: MANDATORY (high, CVSS 8.2)\n\nSpring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under the path used by the CloudFoundry Actuator endpoints. This issue affects Spring Boot 3.0.0 through 3.3.13.\n\nAffected dependencies:\n  - org.springframework.boot:spring-boot-starter-actuator:3.3.2 (declared at pom.xml:43)\n\nVulnerable range: >= 3.0.0, <= 3.3.13\n\nRecommended fix:\n  - No patch available for the 3.3.x branch. Consider upgrading to Spring Boot 3.4.x or 3.5.12+, or applying mitigations described in https://spring.io/security/cve-2026-22733"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CWE-732",
+      "title": "Incorrect Permission Assignment for Critical Resource",
+      "category": "Credentials & Secrets",
+      "severity": "optional",
+      "description": "Incorrect Permission Assignment for Critical Resource \u2014 Credentials & Secrets",
+      "evidence": {
+        "files": [
+          "src/main/resources/application.properties:17"
+        ],
+        "explanation": "The application exposes all Spring Boot Actuator endpoints publicly without any access control. At line 17 of application.properties, `management.endpoints.web.exposure.include=*` enables all Actuator endpoints (including /actuator/env, /actuator/beans, /actuator/heapdump, /actuator/threaddump, etc.) on the HTTP interface. There is no Spring Security configuration in the project to restrict access to these sensitive management endpoints, allowing unauthenticated users to access environment variables, internal bean definitions, and other sensitive diagnostic information."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-778",
+      "title": "Insufficient Logging",
+      "category": "Credentials & Secrets",
+      "severity": "potential",
+      "description": "Insufficient Logging \u2014 Credentials & Secrets",
+      "evidence": {
+        "files": [
+          "src/main/resources/application.properties:20"
+        ],
+        "explanation": "The application performs no security event logging. There is no logging of access to sensitive operations, data modifications, or error conditions that could indicate a security incident. The logging configuration at line 20 of application.properties is set only to `INFO` level for the Spring framework, and none of the controllers (OwnerController, PetController, VisitController, VetController) contain any logging statements. Security-relevant events such as data access failures, validation errors, or unexpected exceptions are not recorded."
+      },
+      "storyPoint": 3
+    }
+  ]
 }
