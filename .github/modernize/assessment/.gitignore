@@ -1,0 +1,8 @@
+*
+!reports/
+!js-assessment-report.md
+!engines/
+engines/*
+!engines/architecture-diagram.md
+!engines/dependency-map.md
+!engines/project-facts.md
