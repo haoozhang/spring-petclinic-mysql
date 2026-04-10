@@ -1,0 +1,23 @@
+{
+  "input_name": "Container Engine",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No Dockerfile, Containerfile, or docker-compose files found. The project includes spring-boot-docker-compose and spring-boot-testcontainers as test-scoped dependencies, indicating Docker is used indirectly for local development and testing but no production container configuration exists.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile or Containerfile found in repository",
+      "No docker-compose*.yml files found",
+      "No .dockerignore file found",
+      "No CI/CD workflow files found",
+      "pom.xml includes spring-boot-docker-compose (test scope) and spring-boot-testcontainers (test scope)",
+      "testcontainers:mysql dependency present for integration testing"
+    ],
+    "values": [
+      "Docker (test/dev only via spring-boot-docker-compose and Testcontainers)",
+      "No production container engine configured"
+    ]
+  },
+  "execution_time_seconds": 2,
+  "timestamp": "2026-04-10T08:32:00Z"
+}

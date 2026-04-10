@@ -1,0 +1,23 @@
+{
+  "input_name": "Base Image",
+  "analysis_method": "LLM",
+  "status": "not_applicable",
+  "result": {
+    "finding": "No Dockerfile or Containerfile found in the repository. The application has no container base image configured. The project uses spring-boot-docker-compose and Testcontainers as test-scoped dependencies, but these do not define a base image for the application itself.",
+    "confidence": "high",
+    "evidence": [
+      "No Dockerfile found in repository",
+      "No Containerfile found in repository",
+      "No docker-compose*.yml files found",
+      "No Kubernetes manifests with image references found",
+      "spring-boot-docker-compose is test-scoped only"
+    ],
+    "values": [
+      "No base image configured",
+      "No container registry in use",
+      "No OS base layer defined"
+    ]
+  },
+  "execution_time_seconds": 1,
+  "timestamp": "2026-04-10T08:32:05Z"
+}
