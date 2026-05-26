@@ -1,0 +1,144 @@
+{
+  "GeneratedAt": "2026-05-26T03:57:01.0000000Z",
+  "ProjectPath": ".",
+  "Summary": {
+    "TotalFindings": 10,
+    "CveCount": 7,
+    "CweCount": 3,
+    "BySeverity": {
+      "mandatory": 7,
+      "optional": 3,
+      "potential": 0
+    },
+    "ByCategory": {
+      "CVE": 7,
+      "Credentials & Secrets": 3
+    },
+    "TotalRulesAssessed": 59,
+    "RulesPassed": 56
+  },
+  "CveFindings": [
+    {
+      "Id": "CVE-2025-24813",
+      "Name": "Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:54"
+      ],
+      "Explanation": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-40477",
+      "Name": "Improper restriction of the scope of accessible objects in Thymeleaf expressions",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:62"
+      ],
+      "Explanation": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-40478",
+      "Name": "Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:62"
+      ],
+      "Explanation": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-41293",
+      "Name": "Apache Tomcat - HTTP/2 request headers not validated",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:54"
+      ],
+      "Explanation": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-41901",
+      "Name": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:62"
+      ],
+      "Explanation": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (transitive, pulled by org.springframework.boot:spring-boot-starter-thymeleaf at pom.xml:62)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-43512",
+      "Name": "Apache Tomcat - Digest authenticator will authenticate any unknown user",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:54"
+      ],
+      "Explanation": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    },
+    {
+      "Id": "CVE-2026-43515",
+      "Name": "Apache Tomcat - Security constraints not correctly applied",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions",
+      "Files": [
+        "pom.xml:54"
+      ],
+      "Explanation": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (transitive, pulled by org.springframework.boot:spring-boot-starter-web at pom.xml:54)\n\nRecommended fix:\n  - Upgrade affected dependencies to vendor-patched versions"
+    }
+  ],
+  "CweFindings": [
+    {
+      "Id": "CWE-259",
+      "Name": "Use of Hard-coded Password",
+      "Category": "Credentials & Secrets",
+      "Severity": "optional",
+      "StoryPoint": 5,
+      "Description": "The product contains a hard-coded password, which it uses for its own inbound authentication or for outbound communication to external components.",
+      "Files": [
+        "src/main/resources/db/mysql/user.sql"
+      ],
+      "Explanation": "Hard-coded database password literal 'petclinic' appears in src/main/resources/db/mysql/user.sql:7 in the SQL statement `IDENTIFIED BY 'petclinic'`, indicating a static password embedded in project resources."
+    },
+    {
+      "Id": "CWE-732",
+      "Name": "Incorrect Permission Assignment for Critical Resource",
+      "Category": "Credentials & Secrets",
+      "Severity": "optional",
+      "StoryPoint": 5,
+      "Description": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.",
+      "Files": [
+        "src/main/resources/db/mysql/user.sql"
+      ],
+      "Explanation": "Broad permission assignment is present in src/main/resources/db/mysql/user.sql:7 with `GRANT ALL PRIVILEGES ON petclinic.* TO 'petclinic'@'%'`, granting full privileges from any host for the database account."
+    },
+    {
+      "Id": "CWE-798",
+      "Name": "Use of Hard-coded Credentials",
+      "Category": "Credentials & Secrets",
+      "Severity": "optional",
+      "StoryPoint": 5,
+      "Description": "The product contains hard-coded credentials, such as a password or cryptographic key.",
+      "Files": [
+        "src/main/resources/db/mysql/user.sql"
+      ],
+      "Explanation": "Hard-coded database credentials are embedded in src/main/resources/db/mysql/user.sql:7 (`'petclinic'` username and `'petclinic'` password) inside the grant statement used to provision DB access."
+    }
+  ]
+}
