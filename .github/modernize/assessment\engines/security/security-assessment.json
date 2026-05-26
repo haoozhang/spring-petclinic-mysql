@@ -1,0 +1,106 @@
+{
+  "GeneratedAt": "2026-05-26T03:29:05.429005+00:00",
+  "ProjectPath": ".",
+  "Summary": {
+    "TotalFindings": 7,
+    "CveCount": 7,
+    "CweCount": 0,
+    "BySeverity": {
+      "mandatory": 7,
+      "optional": 0,
+      "potential": 0
+    },
+    "ByCategory": {
+      "CVE": 7
+    },
+    "TotalRulesAssessed": 59,
+    "RulesPassed": 59
+  },
+  "CveFindings": [
+    {
+      "Id": "CVE-2026-43512",
+      "Name": "Apache Tomcat - Digest authenticator will authenticate any unknown user",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2026-43515",
+      "Name": "Apache Tomcat - Security constraints not correctly applied",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2026-41293",
+      "Name": "Apache Tomcat - HTTP/2 request headers not validated",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: < 9.0.118, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.55, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.22, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2025-24813",
+      "Name": "Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.3, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.35, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 9.0.0.M1, < 9.0.99, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 8.5.0, <= 8.5.100, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 11.0.0-M1, < 11.0.3, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 10.1.0-M1, < 10.1.35, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 9.0.0.M1, < 9.0.99, first patched: no patch available\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml), vulnerable range: >= 8.5.0, <= 8.5.100, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2026-41901",
+      "Name": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.4.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.4.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.4.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.4.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2026-40478",
+      "Name": "Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    },
+    {
+      "Id": "CVE-2026-40477",
+      "Name": "Improper restriction of the scope of accessible objects in Thymeleaf expressions",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above",
+      "Files": [
+        "pom.xml"
+      ],
+      "Explanation": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml), vulnerable range: <= 3.1.3.RELEASE, first patched: no patch available\n\nRecommended fix:\n  - Upgrade affected dependencies to the first patched version or later as noted above"
+    }
+  ],
+  "CweFindings": []
+}
