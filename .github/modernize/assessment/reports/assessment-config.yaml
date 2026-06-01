@@ -2,7 +2,6 @@ analysisCoverage: issue-only
 java:
   assessmentDomains:
   - cloud-readiness
-  - security
   targetComputeServices:
   - azure-container-apps
   targetOS:
