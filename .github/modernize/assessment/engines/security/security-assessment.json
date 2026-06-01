@@ -1,0 +1,121 @@
+{
+  "GeneratedAt": "2026-06-01T09:23:23.0000000Z",
+  "ProjectPath": ".",
+  "Summary": {
+    "TotalFindings": 8,
+    "CveCount": 7,
+    "CweCount": 1,
+    "BySeverity": {
+      "mandatory": 7,
+      "potential": 1
+    },
+    "ByCategory": {
+      "CVE": 7,
+      "Credentials & Secrets": 1
+    },
+    "TotalRulesAssessed": 59,
+    "RulesPassed": 58
+  },
+  "CveFindings": [
+    {
+      "Id": "CVE-2026-43512",
+      "Name": "Apache Tomcat - Digest authenticator will authenticate any unknown user",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later",
+      "Files": [
+        "pom.xml:55"
+      ],
+      "Explanation": "[CVE-2026-43512](https://github.com/advisories/GHSA-h6fc-48rj-7qqh): Apache Tomcat - Digest authenticator will authenticate any unknown user\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later"
+    },
+    {
+      "Id": "CVE-2026-43515",
+      "Name": "Apache Tomcat - Security constraints not correctly applied",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later",
+      "Files": [
+        "pom.xml:55"
+      ],
+      "Explanation": "[CVE-2026-43515](https://github.com/advisories/GHSA-5m62-pw8w-7w9f): Apache Tomcat - Security constraints not correctly applied\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later"
+    },
+    {
+      "Id": "CVE-2026-41293",
+      "Name": "Apache Tomcat - HTTP/2 request headers not validated",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later",
+      "Files": [
+        "pom.xml:55"
+      ],
+      "Explanation": "[CVE-2026-41293](https://github.com/advisories/GHSA-r29c-68gh-xp6x): Apache Tomcat - HTTP/2 request headers not validated\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 9.0.118\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 9.0.118 or later"
+    },
+    {
+      "Id": "CVE-2025-24813",
+      "Name": "Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 11.0.3\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 11.0.3 or later",
+      "Files": [
+        "pom.xml:55"
+      ],
+      "Explanation": "[CVE-2025-24813](https://github.com/advisories/GHSA-83qj-6fr2-vhqg): Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.apache.tomcat.embed:tomcat-embed-core:10.1.26 (declared at pom.xml:55) \u2192 patch: 11.0.3\n\nRecommended fix:\n  - Upgrade org.apache.tomcat.embed:tomcat-embed-core to 11.0.3 or later"
+    },
+    {
+      "Id": "CVE-2026-41901",
+      "Name": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.5.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.5.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.5.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.5.RELEASE or later",
+      "Files": [
+        "pom.xml:63"
+      ],
+      "Explanation": "[CVE-2026-41901](https://github.com/advisories/GHSA-c9ph-gxww-7744): Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.5.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.5.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.5.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.5.RELEASE or later"
+    },
+    {
+      "Id": "CVE-2026-40478",
+      "Name": "Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.4.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.4.RELEASE or later",
+      "Files": [
+        "pom.xml:63"
+      ],
+      "Explanation": "[CVE-2026-40478](https://github.com/advisories/GHSA-xjw8-8c5c-9r79): Improper neutralization of specific syntax patterns for unauthorized expressions in Thymeleaf\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.4.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.4.RELEASE or later"
+    },
+    {
+      "Id": "CVE-2026-40477",
+      "Name": "Improper restriction of the scope of accessible objects in Thymeleaf expressions",
+      "Category": "CVE",
+      "Severity": "mandatory",
+      "StoryPoint": 1,
+      "Description": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.4.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.4.RELEASE or later",
+      "Files": [
+        "pom.xml:63"
+      ],
+      "Explanation": "[CVE-2026-40477](https://github.com/advisories/GHSA-r4v4-5mwr-2fwr): Improper restriction of the scope of accessible objects in Thymeleaf expressions\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - org.thymeleaf:thymeleaf:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n  - org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (declared at pom.xml:63) \u2192 patch: 3.1.4.RELEASE\n\nRecommended fix:\n  - Upgrade org.thymeleaf:thymeleaf to 3.1.4.RELEASE or later\n  - Upgrade org.thymeleaf:thymeleaf-spring6 to 3.1.4.RELEASE or later"
+    }
+  ],
+  "CweFindings": [
+    {
+      "Id": "CWE-778",
+      "Name": "Insufficient Logging",
+      "Category": "Credentials & Secrets",
+      "Severity": "potential",
+      "StoryPoint": 3,
+      "Description": "When a security-critical event occurs, the product either does not record the event or omits important details about the event when logging it.",
+      "Files": [
+        "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+        "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+        "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java"
+      ],
+      "Explanation": "The application controllers (OwnerController, PetController, VisitController) perform data-modifying operations (create, update) without any security event logging. No logger is declared or used in any of the main application controllers or service classes. Security-critical operations such as creating or updating owner/pet records, and adding visits are not logged, making audit trails and security incident detection impossible."
+    }
+  ]
+}
