@@ -1,0 +1,13 @@
+analysisCoverage: full
+security:
+  minimumCveSeverity: critical
+java:
+  assessmentDomains:
+  - cloud-readiness
+  targetComputeServices:
+  - azure-appservice
+  - azure-aks
+  - azure-container-apps
+  targetOS:
+  - linux
+  - windows
