@@ -1,0 +1,10 @@
+{
+  "name": "spring-petclinic-mysql",
+  "language": "java",
+  "created_at": "2026-06-15T08:28:15.0560433Z",
+  "source": {
+    "provider": "github",
+    "host": "github.com",
+    "repo": "haoozhang/spring-petclinic-mysql"
+  }
+}
